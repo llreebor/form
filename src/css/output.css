@@ -770,6 +770,8 @@ h2 {
 }
 
 .input {
+  display: flex;
+  width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -836,8 +838,16 @@ h2 {
   margin-bottom: 3.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-20 {
@@ -846,6 +856,10 @@ h2 {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
@@ -860,12 +874,24 @@ h2 {
   margin-top: 74px;
 }
 
+.mt-\[96px\] {
+  margin-top: 96px;
+}
+
 .mt-auto {
   margin-top: auto;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .size-\[14px\] {
@@ -876,6 +902,10 @@ h2 {
 .size-\[50px\] {
   width: 50px;
   height: 50px;
+}
+
+.h-\[15px\] {
+  height: 15px;
 }
 
 .h-full {
@@ -910,6 +940,14 @@ h2 {
   flex-shrink: 0;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -922,12 +960,40 @@ h2 {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-11 {
   gap: 2.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -936,8 +1002,34 @@ h2 {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-\[14px\] {
+  border-radius: 14px;
+}
+
+.rounded-\[15px\] {
+  border-radius: 15px;
 }
 
 .rounded-full {
@@ -946,6 +1038,11 @@ h2 {
 
 .border {
   border-width: 1px;
+}
+
+.border-\[\#F1F1F2\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 241 242 / var(--tw-border-opacity));
 }
 
 .border-transparent {
@@ -967,18 +1064,66 @@ h2 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-progress {
+  background-image: linear-gradient(0deg, #F6F6F8 0%, #F6F6F8 100%);
+}
+
+.bg-progress-fill {
+  background-image: linear-gradient(0deg, #005FF0 0%, #005FF0 100%);
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-black {
@@ -998,6 +1143,10 @@ h2 {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 .before\:absolute::before {
@@ -1101,20 +1250,16 @@ h2 {
     margin-bottom: 2.5rem;
   }
 
-  .xl\:mt-14 {
-    margin-top: 3.5rem;
-  }
-
-  .xl\:mt-\[100px\] {
-    margin-top: 100px;
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .xl\:mt-8 {
     margin-top: 2rem;
   }
 
-  .xl\:mt-10 {
-    margin-top: 2.5rem;
+  .xl\:mt-\[100px\] {
+    margin-top: 100px;
   }
 
   .xl\:max-w-\[350px\] {
@@ -1151,6 +1296,10 @@ h2 {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .md\:hidden {
@@ -1191,10 +1340,6 @@ h2 {
 
   .md\:pb-5 {
     padding-bottom: 1.25rem;
-  }
-
-  .md\:pt-4 {
-    padding-top: 1rem;
   }
 
   .md\:before\:left-4::before {

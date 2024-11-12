@@ -13,7 +13,7 @@
 
 @layer components {
 	.input {
-		@apply rounded border border-neutral-200 p-4 text-xs md:py-3;
+		@apply flex w-full rounded border border-neutral-200 p-4 text-xs md:py-3;
 	}
 	.btn {
 		@apply flex w-full items-center justify-center rounded bg-primary-400 p-5 text-sm font-semibold text-white hover:bg-primary-300 md:py-4;

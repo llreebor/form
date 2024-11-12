@@ -28,6 +28,10 @@ module.exports = {
 					400: '#2A63EE',
 				},
 			},
+			backgroundImage: {
+				progress: 'linear-gradient(0deg, #F6F6F8 0%, #F6F6F8 100%)',
+				'progress-fill': 'linear-gradient(0deg, #005FF0 0%, #005FF0 100%)',
+			},
 			keyframes: {
 				'fade-in': {
 					from: {
