@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply relative font-inter;
+	}
+	h2 {
+		@apply text-[28px] font-bold leading-normal text-neutral-600 md:text-xl;
+	}
+}
+
+@layer components {
+	.input {
+		@apply rounded border border-neutral-200 p-4 text-xs md:py-3;
+	}
+	.btn {
+		@apply flex w-full items-center justify-center rounded bg-primary-400 p-5 text-sm font-semibold text-white hover:bg-primary-300 md:py-4;
+	}
+}
