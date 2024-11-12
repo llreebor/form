@@ -976,10 +976,6 @@ h2 {
   padding-top: 2rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1109,8 +1105,16 @@ h2 {
     margin-top: 3.5rem;
   }
 
-  .xl\:mt-\[180px\] {
-    margin-top: 180px;
+  .xl\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .xl\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .xl\:max-w-\[350px\] {
@@ -1119,6 +1123,10 @@ h2 {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:pt-4 {
+    padding-top: 1rem;
   }
 }
 
@@ -1133,16 +1141,16 @@ h2 {
     margin-bottom: 2rem;
   }
 
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:mt-4 {
     margin-top: 1rem;
   }
 
   .md\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .md\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .md\:hidden {
@@ -1181,12 +1189,12 @@ h2 {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
-  .md\:pt-4 {
-    padding-top: 1rem;
-  }
-
   .md\:pb-5 {
     padding-bottom: 1.25rem;
+  }
+
+  .md\:pt-4 {
+    padding-top: 1rem;
   }
 
   .md\:before\:left-4::before {
